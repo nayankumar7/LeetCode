@@ -14,7 +14,7 @@
  * }
  */
 class Solution {
-    public void solve(TreeNode root, List<Integer> lol, int idx){      
+    public void solve(TreeNode root, List<Integer> lol, int idx) {      
         if(root == null){
             return;
         }
@@ -27,7 +27,6 @@ class Solution {
         // System.out.println(lol);
         solve(root.left, lol, idx+1);
         solve(root.right, lol, idx+1);
-
         
     }
 
